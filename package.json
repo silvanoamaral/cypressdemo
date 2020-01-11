@@ -1,17 +1,25 @@
 {
-  "name": "cypressdemo",
+  "name": "ff-webstore-e2e",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test end-to-end with Cypress.io",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:desktop": "cypress open --env userAgent=desktop",
+    "cypress:mobile": "cypress open --env userAgent=mobile",
+    "cypress": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netshoes/ff-webstore-e2e.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^3.4.0",
-    "express": "^4.17.1"
+  "bugs": {
+    "url": "https://github.com/netshoes/ff-webstore-e2e/issues"
+  },
+  "homepage": "https://github.com/netshoes/ff-webstore-e2e#readme",
+  "devDependencies": {
+    "cypress": "^3.5.0"
   }
 }
